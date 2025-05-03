@@ -1,17 +1,1 @@
 @import "tailwindcss";
-
-
-.button_cls {
-    font-size: 45px;
-    /* outline : 10px solid black; */
-    outline-width:10px ;
-    outline-style: solid;
-    outline-color: black ;
-    outline-offset:10px ;
-    /* border : 10px solid red; */
-    border-width: 10px;
-    border-color:  red;
-    border-style : solid;
-
-    margin: 20px;
-}
