@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+.parent {
+    display: flex;
+    height: 7rem;
+    margin: 1rem;
+    border-width: 2px;
+    border-color : rgb(17, 24, 39) 
+}
+
+.child1 {
+    width: 33.33%;
+    background-color: rgb(254, 215, 170);
+}
+.child2 {
+    width: 33.33%;
+    background-color: rgb(253, 186, 116);
+}
+.child3 {
+    width: 33.33%;
+    background-color: rgb(251, 146, 60);
+}

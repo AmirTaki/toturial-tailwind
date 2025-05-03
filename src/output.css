@@ -7,41 +7,23 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-red-900: oklch(39.6% 0.141 25.723);
     --color-orange-50: oklch(98% 0.016 73.684);
     --color-orange-100: oklch(95.4% 0.038 75.164);
+    --color-orange-200: oklch(90.1% 0.076 70.697);
+    --color-orange-300: oklch(83.7% 0.128 66.29);
+    --color-orange-400: oklch(75% 0.183 55.934);
     --color-orange-500: oklch(70.5% 0.213 47.604);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
-    --color-yellow-50: oklch(98.7% 0.026 102.212);
-    --color-yellow-500: oklch(79.5% 0.184 86.047);
-    --color-lime-400: oklch(84.1% 0.238 128.85);
-    --color-green-200: oklch(92.5% 0.084 155.995);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-600: oklch(62.7% 0.194 149.214);
-    --color-green-700: oklch(52.7% 0.154 150.069);
-    --color-sky-100: oklch(95.1% 0.026 236.824);
-    --color-sky-600: oklch(58.8% 0.158 241.966);
-    --color-sky-700: oklch(50% 0.134 242.749);
-    --color-blue-400: oklch(70.7% 0.165 254.624);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-purple-400: oklch(71.4% 0.203 305.504);
-    --color-pink-800: oklch(45.9% 0.187 3.815);
-    --color-rose-600: oklch(58.6% 0.253 17.585);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-green-300: oklch(87.1% 0.15 154.449);
+    --color-green-400: oklch(79.2% 0.209 151.711);
     --color-gray-600: oklch(44.6% 0.03 256.802);
-    --color-neutral-600: oklch(43.9% 0 0);
-    --color-black: #000;
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-stone-600: oklch(44.4% 0.011 73.639);
     --spacing: 0.25rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -192,35 +174,62 @@
   }
 }
 @layer utilities {
-  .-m-96 {
-    margin: calc(var(--spacing) * -96);
-  }
-  .m-3 {
-    margin: calc(var(--spacing) * 3);
+  .m-1 {
+    margin: calc(var(--spacing) * 1);
   }
   .m-4 {
     margin: calc(var(--spacing) * 4);
   }
-  .m-7 {
-    margin: calc(var(--spacing) * 7);
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
   }
-  .m-96 {
-    margin: calc(var(--spacing) * 96);
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
   }
-  .mx-4 {
-    margin-inline: calc(var(--spacing) * 4);
-  }
-  .mx-8 {
-    margin-inline: calc(var(--spacing) * 8);
-  }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
+  .flex {
+    display: flex;
   }
   .table {
     display: table;
+  }
+  .h-28 {
+    height: calc(var(--spacing) * 28);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
+  .w-1\/3 {
+    width: calc(1/3 * 100%);
+  }
+  .w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/4 {
+    width: calc(2/4 * 100%);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\/4 {
+    width: calc(3/4 * 100%);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-4\/4 {
+    width: calc(4/4 * 100%);
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -232,32 +241,57 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
+  .border-gray-600 {
+    border-color: var(--color-gray-600);
   }
-  .bg-gray-300 {
-    background-color: var(--color-gray-300);
+  .border-gray-700 {
+    border-color: var(--color-gray-700);
   }
-  .bg-gray-600 {
-    background-color: var(--color-gray-600);
+  .border-gray-900 {
+    border-color: var(--color-gray-900);
   }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
+  .border-stone-600 {
+    border-color: var(--color-stone-600);
+  }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
+  }
+  .bg-green-400 {
+    background-color: var(--color-green-400);
+  }
+  .bg-orange-50 {
+    background-color: var(--color-orange-50);
+  }
+  .bg-orange-100 {
+    background-color: var(--color-orange-100);
+  }
+  .bg-orange-200 {
+    background-color: var(--color-orange-200);
+  }
+  .bg-orange-300 {
+    background-color: var(--color-orange-300);
+  }
+  .bg-orange-400 {
+    background-color: var(--color-orange-400);
   }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
+  .bg-red-700 {
+    background-color: var(--color-red-700);
   }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
+  .bg-red-900 {
+    background-color: var(--color-red-900);
   }
   .underline {
     text-decoration-line: underline;
@@ -266,6 +300,25 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+.parent {
+  display: flex;
+  height: 7rem;
+  margin: 1rem;
+  border-width: 2px;
+  border-color: rgb(17, 24, 39);
+}
+.child1 {
+  width: 33.33%;
+  background-color: rgb(254, 215, 170);
+}
+.child2 {
+  width: 33.33%;
+  background-color: rgb(253, 186, 116);
+}
+.child3 {
+  width: 33.33%;
+  background-color: rgb(251, 146, 60);
 }
 @property --tw-border-style {
   syntax: "*";
