@@ -9,7 +9,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-yellow-800: oklch(47.6% 0.114 61.907);
     --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -238,11 +242,23 @@
   .border-red-500 {
     border-color: var(--color-red-500);
   }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
   }
   .font-mono {
     font-family: var(--font-mono);
@@ -324,8 +340,47 @@
     --tw-numeric-fraction: diagonal-fractions;
     font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
   }
+  .line-through {
+    text-decoration-line: line-through;
+  }
+  .overline {
+    text-decoration-line: overline;
+  }
   .underline {
     text-decoration-line: underline;
+  }
+  .decoration-amber-500 {
+    text-decoration-color: var(--color-amber-500);
+  }
+  .decoration-blue-400 {
+    text-decoration-color: var(--color-blue-400);
+  }
+  .decoration-red-500 {
+    text-decoration-color: var(--color-red-500);
+  }
+  .decoration-yellow-800 {
+    text-decoration-color: var(--color-yellow-800);
+  }
+  .decoration-dashed {
+    text-decoration-style: dashed;
+  }
+  .decoration-double {
+    text-decoration-style: double;
+  }
+  .decoration-wavy {
+    text-decoration-style: wavy;
+  }
+  .decoration-2 {
+    text-decoration-thickness: 2px;
+  }
+  .decoration-7 {
+    text-decoration-thickness: 7px;
+  }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
   }
   .outline {
     outline-style: var(--tw-outline-style);
