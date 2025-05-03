@@ -10,6 +10,9 @@
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-orange-50: oklch(98% 0.016 73.684);
+    --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-lime-400: oklch(84.1% 0.238 128.85);
@@ -17,10 +20,12 @@
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-sky-600: oklch(58.8% 0.158 241.966);
     --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-pink-800: oklch(45.9% 0.187 3.815);
     --color-rose-600: oklch(58.6% 0.253 17.585);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-neutral-600: oklch(43.9% 0 0);
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
@@ -188,6 +193,9 @@
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .table {
     display: table;
   }
@@ -201,8 +209,54 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
+  .border-3 {
+    border-style: var(--tw-border-style);
+    border-width: 3px;
+  }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  .border-8 {
+    border-style: var(--tw-border-style);
+    border-width: 8px;
+  }
+  .border-t-4 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 4px;
+  }
+  .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
+  .border-amber-400 {
+    border-color: var(--color-amber-400);
+  }
+  .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+  .border-orange-50 {
+    border-color: var(--color-orange-50);
+  }
+  .border-orange-500 {
+    border-color: var(--color-orange-500);
+  }
+  .border-yellow-500 {
+    border-color: var(--color-yellow-500);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-neutral-600 {
     background-color: var(--color-neutral-600);
